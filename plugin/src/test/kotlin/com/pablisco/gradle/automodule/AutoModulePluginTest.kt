@@ -38,6 +38,12 @@ class AutoModulePluginTest {
     }
 
     @Test
+    fun `generates modules code WITH dynamic features`() = testCase("dynamic_features") {
+        val result = workingDir.runGradleProjects()
+        result.shouldBeSuccess()
+    }
+
+    @Test
     fun `ignores modules`() = testCase("ignore_modules") {
         val result = workingDir.runGradleProjects()
 
