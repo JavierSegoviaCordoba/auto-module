@@ -1,0 +1,13 @@
+<manifest package="com.javiersc.dynamicFeatures.userDetail"
+    xmlns:dist="http://schemas.android.com/apk/distribution">
+
+    <dist:module
+        dist:instant="true"
+        dist:title="@string/user_detail">
+        <dist:delivery>
+            <dist:install-time />
+        </dist:delivery>
+        <dist:fusing dist:include="true" />
+    </dist:module>
+
+</manifest>

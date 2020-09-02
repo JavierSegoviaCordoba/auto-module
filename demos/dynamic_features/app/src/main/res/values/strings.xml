@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dynamic features sample</string>
+    <string name="users">Users</string>
+    <string name="user_detail">User Detail</string>
+    <string name="user_1">User 1</string>
+    <string name="user_2">User 2</string>
+</resources>

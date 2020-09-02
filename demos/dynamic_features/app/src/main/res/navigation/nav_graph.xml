@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/usersFragment">
+
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="com.javiersc.dynamicFeatures.users.UsersFragment"
+        android:label="@string/users"
+        app:moduleName="users">
+        <action
+            android:id="@+id/toUserDetail"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="com.javiersc.dynamicFeatures.userDetail.UserDetailFragment"
+        android:label="{userName}"
+        app:moduleName="userDetail">
+        <argument
+            android:name="userName"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
